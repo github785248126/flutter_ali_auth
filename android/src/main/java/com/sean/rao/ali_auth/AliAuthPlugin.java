@@ -337,4 +337,10 @@ public class AliAuthPlugin extends FlutterActivity implements FlutterPlugin, Act
     Log.i(TAG, "移动网络连接失败");
     return false;
   }
+
+  @Override
+  public void onBackPressed() {
+    //  退出APP
+    System.exit(0);
+  }
 }
